@@ -1,0 +1,106 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#f0f7ff',
+          100: '#e0eeff',
+          200: '#c7ddff',
+          300: '#a4c5ff',
+          400: '#7aa0ff',
+          500: '#5475f9',
+          600: '#3a4df0',
+          700: '#2c3ad5',
+          800: '#2932ad',
+          900: '#253086',
+          950: '#192057',
+        },
+        secondary: {
+          50: '#f5f8fa',
+          100: '#ebf1f5',
+          200: '#d1dfe9',
+          300: '#a7c3d7',
+          400: '#75a2be',
+          500: '#5486a5',
+          600: '#416c8a',
+          700: '#355770',
+          800: '#2e4a5f',
+          900: '#2a3f51',
+          950: '#1a2836',
+        },
+        accent: {
+          50: '#fffaea',
+          100: '#fff2c5',
+          200: '#ffe485',
+          300: '#ffcf45',
+          400: '#ffbb1b',
+          500: '#ffa006',
+          600: '#f97701',
+          700: '#c95104',
+          800: '#a3430e',
+          900: '#853a10',
+          950: '#481c04',
+        },
+        success: {
+          50: '#f0fdf4',
+          500: '#22c55e',
+          900: '#14532d',
+        },
+        warning: {
+          50: '#fffbeb',
+          500: '#f59e0b',
+          900: '#78350f',
+        },
+        error: {
+          50: '#fef2f2',
+          500: '#ef4444',
+          900: '#7f1d1d',
+        },
+        neutral: {
+          50: '#f8fafc',
+          100: '#f1f5f9',
+          200: '#e2e8f0',
+          300: '#cbd5e1',
+          400: '#94a3b8',
+          500: '#64748b',
+          600: '#475569',
+          700: '#334155',
+          800: '#1e293b',
+          900: '#0f172a',
+          950: '#020617',
+        },
+      },
+      fontFamily: {
+        sans: [
+          '"Inter var"',
+          'ui-sans-serif',
+          'system-ui',
+          'sans-serif',
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"',
+        ],
+        display: [
+          '"Playfair Display"',
+          'serif',
+        ],
+      },
+      boxShadow: {
+        'gem': '0 0 15px rgba(84, 117, 249, 0.3)',
+      },
+      keyframes: {
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
+      },
+      animation: {
+        shimmer: 'shimmer 2.5s infinite linear',
+      },
+    },
+  },
+  plugins: [],
+};
